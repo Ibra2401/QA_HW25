@@ -1,0 +1,311 @@
+{
+  "id": "4e6b7f0a-4134-4b86-9d87-0c62f1e730e4",
+  "version": "2.0",
+  "name": "HW25",
+  "url": "https://md-fashion.com.ua",
+  "tests": [{
+    "id": "af58e8a5-975b-4113-aec6-b9e34c370536",
+    "name": "T1 Call-back Functionality",
+    "commands": [{
+      "id": "691e98b7-4cab-4d15-b3db-6552af483e57",
+      "comment": "",
+      "command": "open",
+      "target": "/ua",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78aaf64f-d033-4d7a-9c22-e3b9063dff80",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1571x1003",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc77603d-c562-4130-8262-98891e47544c",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.get-call-button--desktop",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "beb27bae-48d5-42e3-904e-a5f8ffcdf9d1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//body/a",
+      "targets": [
+        ["css=.get-call-button--desktop", "css:finder"],
+        ["xpath=//body/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f60f8a8-f2ad-400f-ab52-15abcecc363c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//body/a",
+      "targets": [
+        ["css=.get-call-button--desktop", "css:finder"],
+        ["xpath=//body/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31dbdcfc-bab1-4266-ba8f-ac135c2be80d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.get-call-popup__header",
+      "targets": [
+        ["css=.get-call-popup__header", "css:finder"],
+        ["xpath=//div[@id='callback_463nejay182']/div/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "Замовте зворотній дзвінок"
+    }, {
+      "id": "0dce9c53-a596-4ae4-b443-c98c50bd13bb",
+      "comment": "",
+      "command": "type",
+      "target": "css=.phone-input-always",
+      "targets": [
+        ["css=.phone-input-always", "css:finder"],
+        ["xpath=//input[@type='tel']", "xpath:attributes"],
+        ["xpath=//div[@id='callback_61we2uiuhcy']/div/div[2]/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "000 430 00 00"
+    }, {
+      "id": "5943520e-c0fa-4d9e-b886-63f70a818d48",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-get-call-button",
+      "targets": [
+        ["css=.js-get-call-button", "css:finder"],
+        ["xpath=//div[@id='callback_61we2uiuhcy']/div/div[2]/div/div[2]/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Передзвоніть мені')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e07d4f69-281a-4a9c-86ac-a1981e3c2390",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Закрити')]",
+      "targets": [
+        ["css=.js-get-call-close", "css:finder"],
+        ["xpath=//div[@id='callback_61we2uiuhcy']/div/div[2]/div/div[2]/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Закрити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "aa80e4b2-3b1c-41a5-b684-89a68273ef97",
+    "name": "T2 Search Functionality",
+    "commands": [{
+      "id": "ac270511-6256-4bb2-87b7-1222da8b3517",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fcdd4305-1ec2-4fd9-a046-cfb4cd5133e9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1571x1003",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81d27ee2-d2cf-4900-b16c-8921d9ccb3d3",
+      "comment": "",
+      "command": "click",
+      "target": "css=input",
+      "targets": [
+        ["name=s", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='s']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "efb0f215-fc1d-40e5-bf1d-a9018fa27ce4",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='s']",
+      "targets": [
+        ["name=s", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='s']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Calvin Klein"
+    }, {
+      "id": "09ed94cb-638b-41a6-9253-f28aecfa29c5",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=s",
+      "targets": [
+        ["name=s", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='s']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "b07f254c-973d-4528-b973-cf4fc88d72d8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.seo-block__h1",
+      "targets": [
+        ["css=.seo-block__h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Товары по запросу «Calvin Klein»')]", "xpath:innerText"]
+      ],
+      "value": "Товары по запросу «Calvin Klein»"
+    }, {
+      "id": "f1aa6795-b887-4a11-aac0-13f7f1d5e75e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,170)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63b9e56d-6122-41ac-8f95-f703c5dbbcab",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,347)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f0afbfc-433b-451d-acdd-23bbd236439d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.product-list",
+      "targets": [
+        ["css=.product-list", "css:finder"],
+        ["xpath=//div[5]/div/div/div/div[2]/div[2]/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e5910e19-4a80-44c6-a651-a88f84f155d9",
+    "name": "T3 Drop-menu Functionality",
+    "commands": [{
+      "id": "5e446364-d853-4ff4-a8ed-143de8c6c923",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1b640abe-6ab5-45f9-a564-479fb0c00417",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1571x1003",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a7698231-543b-416f-a52f-cf63f259965f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Рус",
+      "targets": [
+        ["linkText=Рус", "linkText"],
+        ["css=.language-select > .dropdown__current", "css:finder"],
+        ["xpath=//a[contains(text(),'Рус')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'javascript:;')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Рус')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bbcf6ec-78b3-4a0d-8adc-1c42679ae72b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.wishlist:nth-child(3)",
+      "targets": [
+        ["css=.wishlist:nth-child(3)", "css:finder"],
+        ["xpath=(//a[contains(@href, '/favorites')])[2]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88e5f0e6-3f0e-4b90-a818-fff7b12738b1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Мужчинам')]",
+      "targets": [
+        ["linkText=Мужчинам", "linkText"],
+        ["css=li:nth-child(2) > .main-menu__submenu > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Мужчинам')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/store/man/odezhda')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Мужчинам')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7142e7aa-bfcb-4534-8655-18980cb715b7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.seo-block__h1",
+      "targets": [
+        ["css=.seo-block__h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Мужская одежда')]", "xpath:innerText"]
+      ],
+      "value": "Мужская одежда"
+    }, {
+      "id": "799c88db-5894-4e31-b0c3-7bf9108f5fb2",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,195)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df6f4c2a-c40a-49b8-a58c-10e4c83300d5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,685)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ecb04ee6-57b2-41a0-900d-27771de5f886",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) > .main-menu__submenu > li:nth-child(1) > a",
+      "targets": [
+        ["linkText=Женщинам", "linkText"],
+        ["css=li:nth-child(2) > .main-menu__submenu > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Женщинам')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/store/women/odezhda')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Женщинам')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e2e3472-1c26-4d4a-a9f8-35f0bccfe6e4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.product-list",
+      "targets": [
+        ["css=.product-list", "css:finder"],
+        ["xpath=//div[4]/div/div/div/div[2]/div[2]/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02476b1b-c332-4078-b716-55eb5bd18082",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,796)",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c808dfe6-e3b5-4e7c-835c-2a3fdb84f2b7",
+    "name": "HomePage TC",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["af58e8a5-975b-4113-aec6-b9e34c370536", "aa80e4b2-3b1c-41a5-b684-89a68273ef97", "e5910e19-4a80-44c6-a651-a88f84f155d9"]
+  }],
+  "urls": ["https://md-fashion.com.ua/"],
+  "plugins": []
+}
